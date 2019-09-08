@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title
+  body
+    | Welcome to NoteMaker! 
+    p  Create, Edit and Save notes, for those little things in your life.
+    form(action='/auth/login', method='post')
+      input(type='text', name='email')
+      p Email
+      input(type='password', name='password')
+      p Password
+      p
+        a(href='') Forgot password?
+      input(type='checkbox', name='loggedin')
+      p Keep me logged in
+      input(type='submit', value='login')
+      p Or login through 
+      div Gmail
+      p
+      p
+        | First time? Click 
+        a(href='') here
+        |  to sign in.
