@@ -2,23 +2,32 @@ doctype html
 html
   head
     title
+    link(rel='stylesheet', type='text/css', href='login.css')
+    link(href='https://fonts.googleapis.com/css?family=Dancing+Script&display=swap', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Barlow&display=swap', rel='stylesheet')
   body
-    | Welcome to NoteMaker! 
-    p  Create, Edit and Save notes, for those little things in your life.
-    form(action='/auth/login', method='post')
-      input(type='text', name='email')
-      p Email
-      input(type='password', name='password')
-      p Password
-      p
-        a(href='') Forgot password?
-      input(type='checkbox', name='loggedin')
-      p Keep me logged in
-      input(type='submit', value='login')
-      p Or login through 
-      div Gmail
-      p
-      p
-        | First time? Click 
-        a(href='') here
-        |  to sign in.
+    center
+      h1 Welcome to NoteMaker!
+      center
+        p  Create, Edit and Save notes, for those little things in your life.
+        #loginform
+          form(action='/auth/login', method='post')
+            center
+              p Log in
+              input(type='text', name='email', placeholder='Email')
+              br
+              input(type='password', name='password', placeholder='Password')
+              br
+              p
+                a(href='') Forgot password?
+              p
+                input(type='checkbox', name='loggedin')
+                | Keep me logged in
+              input(type='submit', value='Login')
+              p Or login through 
+              #gmail Gmail
+              p
+              p
+                | First time? Click 
+                a(href='') here
+                |  to sign in.

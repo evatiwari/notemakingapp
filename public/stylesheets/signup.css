@@ -1,0 +1,21 @@
+body{
+	background-color: #95c7bd;
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+}
+#signupform{
+	background-color: #e6faf6;
+	font-family: 'Barlow', sans-serif;
+	border:5px solid #bdc3c7;
+	padding:20px 30px 20px 30px ;
+	margin:40px 500px 20px 500px;
+}
+
+h1{
+	font-family: 'Dancing Script', cursive;
+	font-size: 50px;
+}
+input{
+	height: 30px;
+	margin-bottom: 10px;
+}
