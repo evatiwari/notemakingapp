@@ -16,7 +16,6 @@ router.post('/',async (req,res)=>{
       return res.status(400).send('This email id is already in use')
   }
   user= new User({
-      name: req.body.name,
       email: req.body.email,
       password: req.body.password
   });
@@ -35,4 +34,4 @@ function validateUser(user){
   return Joi.validate(user,Schema);
 }
 
-module.exports = router;
+module.exports=router;
