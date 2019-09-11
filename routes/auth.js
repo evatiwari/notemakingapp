@@ -4,8 +4,7 @@ var User= require('../models/user');
 var bcrypt= require('bcrypt')
 
 
-module.exports = function(passport){
-    router.post('/signup', async (req, res, next)=>{
+    router.post('/', async (req, res)=>{
         try{
         var user=await User.findOne({email:req.body.email});
         if(!user){
@@ -14,12 +13,12 @@ module.exports = function(passport){
         var validPassword= await bcrypt.compare(req.body.password,user.password);
     if(!validPassword){
         return res.status(400).send('Invalid email or password')
-       } 
+       } ;
+       res.send('Logged in successfully')
     }
         catch(err){
             res.status(500).send("An error occured")
         }
     });
       
-    return router;
-}
+ module.exports= router;

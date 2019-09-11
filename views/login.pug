@@ -11,7 +11,7 @@ html
       center
         p  Create, Edit and Save notes, for those little things in your life.
         #loginform
-          form(action='/auth/login', method='post')
+          form(action='/login', method='post')
             center
               p Log in
               input(type='text', name='email', placeholder='Email')
@@ -21,7 +21,7 @@ html
               p
                 a(href='') Forgot password?
               p
-                input(type='checkbox', name='loggedin')
+                //input(type='checkbox', name='loggedin')
                 | Keep me logged in
               input(type='submit', value='Login')
               p Or login through 
