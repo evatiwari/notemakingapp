@@ -1,0 +1,26 @@
+body{
+	background-color: #95c7bd;
+
+}
+h1{
+	font-family: 'Dancing Script', cursive;
+	font-size: 50px;
+}
+p{
+	font-family: 'Dancing Script', cursive;
+	font-size: 30px;
+}
+div{
+	background-color: #e6faf6;
+	height: 300px;
+	width: 300px;
+	border-radius:20px;
+}
+button{
+	font-family: 'Barlow', sans-serif;
+	font-size: 20px;
+	color: black;
+	background-color: #e6faf6;
+	height:80px;
+	width: 300px;
+}

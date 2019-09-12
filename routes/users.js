@@ -22,8 +22,8 @@ router.post('/',async (req,res)=>{
   
   user.password= await bcrypt.hash(user.password, 10);
   user.save().then(()=>{
-    //res.send("You have been registered");
-    res.redirect('/userhomepage')
+    res.send("You have been registered");
+    //res.redirect('/userhomepage')
 })
 .catch((err)=>{
 

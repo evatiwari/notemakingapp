@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title
+    link(rel='stylesheet', type='text/css', href='/stylesheets/userhomepage.css')
+    link(href='https://fonts.googleapis.com/css?family=Dancing+Script&display=swap', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Barlow&display=swap', rel='stylesheet')
+  body
+    center
+      h1 Your Notes
+    center
+      p Create, edit and delete notes
+      button#note New Note
+    script(type='text/javascript', language='javascript').
+      const newNote= document.querySelector("#note");
+      newNote.addEventListener('click',function(){
+      var newDiv= document.createElement('div');
+      document.body.appendChild(newDiv);
+      });
