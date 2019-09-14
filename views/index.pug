@@ -1,5 +1,16 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html
+  head
+    title index
+    link(type='text/css', rel='stylesheet', href='/stylesheets/index.css')
+    link(href='https://fonts.googleapis.com/css?family=Dancing+Script&display=swap', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Barlow&display=swap', rel='stylesheet')
+  body
+    center
+      h1 NoteMaker
+    center
+      p Create, edit and delete notes
+      #login
+        a(href='/auth/login') Login
+      #signup
+        a(href='/auth/signup') Signup

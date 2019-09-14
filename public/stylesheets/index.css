@@ -1,0 +1,31 @@
+#login{
+	font-family: 'Barlow', sans-serif;
+	background-color: #e6faf6;
+	font-size: 30px;
+	height:50px;
+	width: 110px;
+	
+}
+#signup{
+	font-family: 'Barlow', sans-serif;
+	background-color: #e6faf6;
+	font-size: 30px;
+	height:50px;
+	width: 110px;
+	margin-top: 50px;
+}
+body{
+	background-color: #95c7bd;
+}
+h1{
+	font-family: 'Dancing Script', cursive;
+	font-size: 80px;
+}
+p{
+	font-family: 'Dancing Script', cursive;
+	font-size: 50px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}

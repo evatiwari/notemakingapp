@@ -29,6 +29,7 @@ button{
 	background-color: #e6faf6;
 	height:80px;
 	width: 300px;
+	margin-top: 20px;
 }
 #logout{
 	background-color: #e6faf6;
@@ -42,4 +43,10 @@ a{
 	font-size: 20px;
 	color: black;
 	text-decoration: none;
+}
+textarea{
+	background-color:  #e6faf6;
+	font-family: 'Barlow', sans-serif;
+	font-size: 20px;
+	border-radius:20px;
 }

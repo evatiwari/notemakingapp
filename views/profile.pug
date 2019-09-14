@@ -8,18 +8,14 @@ html
     link(href='https://fonts.googleapis.com/css?family=Barlow&display=swap', rel='stylesheet')
   body
     #logout 
-      a(href='/auth/logout') Log Out
+      a(href='/auth/login') Log Out
     center
       h1 Your Notes
     center
       p Create, edit and delete notes
+      #textarea
+        textarea(name="note", cols="30", rows="10")
       button#note New Note
       .grid
-    script(type='text/javascript', language='javascript').
-      const newNote= document.querySelector("#note");
-      newNote.addEventListener('click',function(){
-      var newDiv= document.createElement('div');
-      newDiv.className= 'newnote';
-      const grid= document.querySelector('.grid');
-      grid.appendChild(newDiv);
-      });
+    script(type='text/javascript', src='/javascripts/profile.js').
+      

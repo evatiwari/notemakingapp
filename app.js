@@ -58,7 +58,7 @@ app.use('/profile', profileRouter);
 app.use('/signup', usersRouter);
 app.use('/login', authRouter);
 app.get('/', function(req, res, next) {
-  res.render('index', { title: 'NoteMaker', user: req.user });
+  res.render('index', { user: req.user });
 });
 
 
