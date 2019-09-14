@@ -14,10 +14,12 @@ html
     center
       p Create, edit and delete notes
       button#note New Note
+      .grid
     script(type='text/javascript', language='javascript').
       const newNote= document.querySelector("#note");
       newNote.addEventListener('click',function(){
       var newDiv= document.createElement('div');
       newDiv.className= 'newnote';
-      document.body.appendChild(newDiv);
+      const grid= document.querySelector('.grid');
+      grid.appendChild(newDiv);
       });
