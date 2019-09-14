@@ -14,7 +14,7 @@ var bcrypt= require('bcrypt')
     if(!validPassword){
         return res.status(400).send('Invalid email or password')
        } ;
-       res.redirect('/auth/login');
+       res.render('profile');
     }
         catch(err){
             res.status(500).send("An error occured")
