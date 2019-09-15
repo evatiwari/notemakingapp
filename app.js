@@ -17,6 +17,7 @@ var indexRouter = require('./routes/index');
 var usersRouter= require('./routes/users');
 var authRouter= require('./routes/auth');
 var profileRouter= require('./routes/profile');
+var changeRouter= require('./routes/changepassword');
 
 
 
@@ -57,6 +58,7 @@ app.use('/auth', indexRouter);
 app.use('/profile', profileRouter);
 app.use('/signup', usersRouter);
 app.use('/login', authRouter);
+app.use('/changepassword',changeRouter);
 app.get('/', function(req, res, next) {
   res.render('index', { user: req.user });
 });

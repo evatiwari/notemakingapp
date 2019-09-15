@@ -30,4 +30,8 @@ router.get('/google/redirect',passport.authenticate('google'),(req,res,next)=>{
  
 })
 
+router.get('/changepassword', (req,res,next)=>{
+  res.render('changepassword');
+})
+
 module.exports = router;

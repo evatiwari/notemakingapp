@@ -16,7 +16,6 @@ var bcrypt= require('bcrypt');
         return res.status(400).send('Invalid email or password')
        } ;
        res.render('profile');
-       const token= user
     }
         catch(err){
             res.status(500).send("An error occured")
