@@ -19,7 +19,7 @@ p{
 .newnote{
 	background-color: #e6faf6;
 	height: 300px;
-	
+
 	border-radius:20px;
 }
 button{
@@ -49,4 +49,12 @@ textarea{
 	font-family: 'Barlow', sans-serif;
 	font-size: 20px;
 	border-radius:20px;
+}
+.delete{
+	height:30px;
+	width:100px;
+}
+.edit{
+	height:30px;
+	width:100px;
 }
